@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Cadastro"
+        android:textColor="@color/bright_foreground_material_light"
+        android:textSize="38sp" />
+
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="50dp"
+        android:hint="Nome*"
+        android:textStyle="italic"
+        android:textSize="30sp"
+
+
+        />
+
+
+    <EditText
+        android:id="@+id/edtLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNome"
+        android:layout_marginTop="20dp"
+        android:hint="Login*"
+        android:textStyle="italic"
+        android:textSize="30sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtLogin"
+        android:layout_marginTop="20dp"
+        android:hint="Senha*"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:textStyle="italic"
+
+        />
+
+
+    <RadioGroup
+        android:id="@+id/rdGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edSenha"
+        android:layout_alignEnd="@+id/edSenha">
+
+
+        <RadioButton
+            android:id="@+id/rbMasc"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:layout_marginStart="48dp"
+            android:textSize="18dp"
+            android:layout_weight="1"
+
+            android:text="Masculino"
+            android:checked="false" />
+
+        <RadioButton
+            android:id="@+id/rbFem"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_marginEnd="48dp"
+            android:textSize="18dp"
+            android:layout_weight="1"
+            android:text="Feminino" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btConcluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdGroup1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Cadastrar"
+        android:textSize="25sp"
+        android:background="@android:color/darker_gray" />
+</RelativeLayout>
