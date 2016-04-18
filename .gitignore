@@ -6,3 +6,10 @@
 .DS_Store
 /build
 /captures
+build.gradle
+FabricaAndroid.iml
+gradle.properties
+gradlew
+gradlew.bat
+local.properties
+serrings.gradle
