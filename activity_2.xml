@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dim_foreground_disabled_material_dark"
+    android:padding="18dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fabrica de Programador"
+        android:textColor="@color/abc_primary_text_disable_only_material_light"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="30dp"
+        android:hint="Nome" />
+
+
+    <Button
+        android:id="@+id/btNovoUsuario"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNome"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Novo Usuário"
+        android:textStyle="bold"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light"
+        android:background="@color/switch_thumb_disabled_material_light"/>
+
+
+    <Button
+        android:id="@+id/btNovoDev"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btNovoUsuario"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Novo Desenvolvedor"
+        android:textStyle="bold"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light"
+        android:background="@color/switch_thumb_disabled_material_light"/>
+
+
+    <Button
+        android:id="@+id/btNovoDesigner"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btNovoDev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Novo Designer"
+        android:textStyle="bold"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light"
+        android:background="@color/switch_thumb_disabled_material_light" />
+
+    <Button
+        android:id="@+id/btSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btNovoDesigner"
+        android:layout_marginStart="40dp"
+        android:background="@color/switch_thumb_disabled_material_light"
+        android:text="Sair"
+        android:textStyle="bold"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light" />
+
+    <Button
+        android:id="@+id/btCadastrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/btSair"
+        android:background="@color/switch_thumb_disabled_material_light"
+        android:text="Ir para Lista"
+        android:textStyle="bold"
+        android:textColor="@color/abc_background_cache_hint_selector_material_light" />
+
+</RelativeLayout>
