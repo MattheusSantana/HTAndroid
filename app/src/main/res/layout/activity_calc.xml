@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp">
+
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Calculo"
+        android:inputType="number"
+        android:textSize="26sp"
+
+        />
+
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto"
+        android:hint=""
+        android:inputType="number"
+        android:textSize="26sp"
+
+        android:layout_toStartOf="@+id/bt_del" />
+
+
+    <Button
+        android:id="@+id/bt_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="DEL"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/texto"
+        android:layout_alignEnd="@+id/linear_1" />
+
+    <LinearLayout
+        android:id="@+id/linear_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/bt_del"
+        android:layout_marginTop="40dp"
+        android:layout_centerInParent="true"
+        >
+
+        <Button
+            android:id="@+id/bt1"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="1"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt2"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="2"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="3"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_dividir"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="/"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/bt_del">
+
+
+        <Button
+            android:id="@+id/bt4"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="4"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt5"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="5"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt6"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="6"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_multiplicacao"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="X"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_2"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:id="@+id/bt7"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="7"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt8"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="8"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt9"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="9"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_subtracao"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="-"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_3"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/bt_virgula"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text=","
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt0"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="0"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_igual"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="="
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/bt_soma"
+            android:layout_width="70dp"
+            android:layout_height="72dp"
+            android:text="+"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>
