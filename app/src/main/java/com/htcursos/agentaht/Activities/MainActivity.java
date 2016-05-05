@@ -1,4 +1,4 @@
-package com.htcursos.agentaht.Activities;
+package com.htcursos.agentaht.activities;
 
 import android.content.Intent;
 import android.os.Bundle;
