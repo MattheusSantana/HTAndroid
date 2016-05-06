@@ -1,12 +1,14 @@
 package com.htcursos.agentaht.activities;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
+import com.htcursos.DataBase.DataBase;
 import com.htcursos.adapter.UserListAdapter;
 import com.htcursos.agentaht.R;
 import com.htcursos.agentaht.models.Agenda;
@@ -39,11 +41,26 @@ public class BetaActivity extends AppCompatActivity {
         ButterKnife.bind(this);
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
+
+        //Capturando dados do Bundle da tela anterior.
         String nome = bundle.getString("nome");
+        String email = bundle.getString("email");
+        String telefone = bundle.getString("telefone");
 
-        Agenda.adicionar(new User(nome, R.drawable.user_image));
+        //Instanciando um nome usuario com os dados do bundle.
+        User user = new User();
+        user.setImagem(R.drawable.user_image);
+        user.setNome(nome);
+        user.setTelefone(telefone);
+        user.setEmail(email);
 
-        UserListAdapter adapter = new UserListAdapter(this, Agenda.getUserList());
+        //Instanciando um objeto db.
+        DataBase db = new DataBase(this);
+
+        //Salvando o usuario.
+        db.salvar(user);
+        //Listando os usuarios.
+        UserListAdapter adapter = new UserListAdapter(this, db.buscarTodos());
         listUser.setAdapter(adapter);
     }
 
