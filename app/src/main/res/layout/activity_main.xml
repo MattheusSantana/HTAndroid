@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent" android:padding="18dp">
+
+
+    <EditText
+        android:id="@+id/edt_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="102dp" />
+
+    <EditText
+        android:id="@+id/edt_cargo"
+        android:layout_below="@+id/edt_nome"
+        android:layout_marginTop="32dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cargo" />
+
+    <EditText
+        android:id="@+id/edt_salario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_cargo"
+        android:layout_marginTop="32dp"
+        android:hint="Salário"
+        android:inputType="number"
+        />
+
+    <Button
+        android:id="@+id/bt_calcular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Calcular"
+        />
+</RelativeLayout>
